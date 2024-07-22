@@ -1,3 +1,20 @@
-.title {
-  align-items: center;
+@font-face {
+  font-family: comicSans;
+  src: url(assets/fonts/comic.ttf);
+}
+
+#title {
+  text-align: center;
+  font-family: comicSans;
+  color: white;
+}
+
+html {
+  background-color: black;
+}
+
+header {
+  text-align: center;
+  font-family: comicSans;
+  font-size: 24pt;
 }
