@@ -1,22 +1,21 @@
 // random quote
-let Quotes = ['"Never finished a project since \'08"', '"Commiting tax fraud since \'98"', '"I just want to Grill"'];
+let Quotes = [
+    '"Never finished a project since \'08"', '"Commiting tax fraud since \'98"', '"I just want to Grill"', '"I don\'t play games.... Unless I want to"', '"Comedic is comedy but I\'m bad at spelling'
+];
 
 function selectRandomQuote() {
     let ranNum = Math.floor(Math.random() * Quotes.length + 1);
 
-    switch (ranNum) {
-        case 1:
-            return Quotes[0];
-            break;
-        case 2:
-            return Quotes[1];
-        case 3:
-            return Quotes[2];
-            break;
-        default:
-            return ranNum;
-            break;
+    for (let index = 0; index < Quotes.length; index++) {
+        if (ranNum - 1 == index) {
+            return Quotes[index];
+            
+        }
+        console.log(index);
+        
     }
+
+    console.log("Random Number: " + ranNum);
 }
 
 let randomQuote = selectRandomQuote();

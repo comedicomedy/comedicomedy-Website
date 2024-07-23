@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="cCWIcon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="36.65625"
+     inkscape:cx="4.9786871"
+     inkscape:cy="9.1526002"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="0.49104859"
+       y="3.0554135"
+       width="14.976981"
+       height="12.221654"
+       id="rect6" />
+    <rect
+       x="0.30008525"
+       y="0.43648764"
+       width="15.304348"
+       height="15.195226"
+       id="rect5" />
+    <rect
+       x="0.62745098"
+       y="0.87297528"
+       width="14.84058"
+       height="14.513214"
+       id="rect4" />
+    <rect
+       x="0.50468883"
+       y="1.2276215"
+       width="14.84058"
+       height="13.626598"
+       id="rect2" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000"
+       id="rect1"
+       width="16"
+       height="16"
+       x="-0.027280478"
+       y="0" />
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="fill:#000000;white-space:pre;shape-inside:url(#rect2)" />
+    <text
+       xml:space="preserve"
+       style="fill:#ffffff;-inkscape-font-specification:'Comic Sans MS';font-family:'Comic Sans MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       x="3.3554988"
+       y="3.7237852"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         x="3.3554988"
+         y="3.7237852" /></text>
+    <text
+       xml:space="preserve"
+       id="text4"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS';white-space:pre;shape-inside:url(#rect4);fill:#ffffff"><tspan
+         x="0.62695312"
+         y="11.299477"
+         id="tspan1"> </tspan></text>
+    <text
+       xml:space="preserve"
+       id="text5"
+       style="fill:#ffffff;-inkscape-font-specification:'Comic Sans MS';font-family:'Comic Sans MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;white-space:pre;shape-inside:url(#rect5);font-size:9px" />
+    <text
+       xml:space="preserve"
+       id="text6"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS';white-space:pre;shape-inside:url(#rect6);shape-padding:0.654731;fill:#ffffff"><tspan
+         x="1.1445312"
+         y="10.659938"
+         id="tspan2">c&amp;c</tspan></text>
+  </g>
+</svg>
