@@ -23,8 +23,5 @@ function selectRandomQuote() {
 let randomQuote = selectRandomQuote();
 
 window.onload = function(){
-    visits++;
-
     document.getElementById("ranQuote").innerHTML = randomQuote;
-    document.getElementById("numOfVisits").innerHTML = "Number of Employees: " + visits;
 }
