@@ -1,5 +1,5 @@
 const jsonUrl =
-  "https://raw.githubusercontent.com/comedicomedy/comedicomedy-Website/main/comedicAndCoWebsite/src/scripts/visits.json";
+  "https://nd8jm5jn-8080.use.devtunnels.ms/visits.json";
 
 /*
 window.onload(() => {
@@ -7,11 +7,13 @@ window.onload(() => {
 })
 */
 
-function reqListener() {
-  console.log(JSON.parse(this.responseText));
-}
+let jsonFile = fetch(jsonUrl).then((response) => {
+  if (!response.ok){
+    throw new Error("Https Request Status: " + response.status) 
+  }
 
-const jsonRequest = new XMLHttpRequest();
-jsonRequest.addEventListener("load", reqListener);
-jsonRequest.open("GET", jsonUrl);
-jsonRequest.send();
+  return response.json();
+})
+.then((response) => {
+  console.log(JSON.parse(response))
+})
