@@ -1,10 +1,9 @@
 const jsonUrl =
-  "https://nd8jm5jn-8080.use.devtunnels.ms/visits.json";
+  "http://localhost:8080/visits";
 
+var numOfVisitors = 0;
 /*
-window.onload(() => {
-  // Fetch the Json, Edit a  value of the JSON file, Display the JSON
-})
+
 */
 
 let jsonFile = fetch(jsonUrl).then((response) => {
@@ -15,5 +14,12 @@ let jsonFile = fetch(jsonUrl).then((response) => {
   return response.json();
 })
 .then((response) => {
-  console.log(JSON.parse(response))
+  numOfVisitors = response.numOfVisits;
+  console.log(response.numOfVisits);
 })
+
+window.onload = function(){
+  document.getElementById("numOfVisits").innerHTML = numOfVisitors;
+}
+
+console.log(numOfVisitors);

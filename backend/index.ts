@@ -1,32 +1,26 @@
-import {writeFile, rm}  from "node:fs";
-
-const jsonUrl = "visits.json";
-var visits = { "numOfVisits": 0 };
+let numOfVisits = 0;
 
 const server =  Bun.serve({
     port: 8080,
     fetch(req) {
-        const url = new URL(req.url);
-        
-        if (url.pathname === jsonUrl) {
-            visits.numOfVisits++;
-            updateJson();
-            let jsonFile = Bun.file("visits.json");
+                
+        if (new URL(req.url).pathname  === "/visits"){
+            numOfVisits++;
 
-            return new Response(jsonFile);
+            let visits = {"numOfVisits": numOfVisits} 
+            let jsonResponse = Response.json(visits);
+
+            console.log(visits.numOfVisits);
+
+            jsonResponse.headers.set("Access-Control-Allow-Origin", "*")
+            return jsonResponse; 
         }
         
-    },
+    
+      return Response.error();
+    }
 
 })
 
-function updateJson() {
-    rm("visits.json", (Error) => { 
-        if (Error) throw Error
-    });
-    writeFile("visits.json", JSON.stringify(visits), (Error) => {
-        if (Error) throw Error
-    } )
-}
-
 console.log(server.port);
+console.log(server.url);
