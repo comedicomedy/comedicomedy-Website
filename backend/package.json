@@ -1,11 +1,14 @@
 {
   "name": "ccwbackend",
   "module": "index.ts",
-  "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "aws-sdk": "^2.1664.0"
   }
 }
