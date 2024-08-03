@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+    <channel>
+        <title>comedicomedy blogs</title>
+        <link>https://www.comedicomedy.com</link>
+        <description>Official comedic and co blog</description>
+
+        <item>
+            <title>My First Blog Post</title>
+            <link>https://www.comedicomedy.com/blogPosts/firstBlogPost.html</link>
+            <description>My First Blog Post</description>
+        </item>
+    </channel>
+
+</rss>

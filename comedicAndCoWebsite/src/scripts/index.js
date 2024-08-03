@@ -38,7 +38,7 @@ window.onload = function(){
 // Call Backend for Number of Visitors
 
 const jsonUrl =
-  "http://localhost:8080/visits";
+  "http://52.204.111.135:8080/visits";
 
 let jsonFile = fetch(jsonUrl).then((response) => {
   if (!response.ok){
