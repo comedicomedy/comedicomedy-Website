@@ -1,13 +1,14 @@
-@font-face {
-  font-family: comicSans;
-  src: url(fonts/comic.ttf);
+:root {
+  --albumCoverSize: 450px;
+  --musicAlbumCoverSize: 150px;
 }
 
-#title {
-  text-align: center;
-  color: white;
-}
+@font-face { 
+  font-family: comicSans; 
 
+  src: url(fonts/comic.ttf); 
+}   
+  
 .body {
   text-align: left;
   padding: 10px;
@@ -21,6 +22,89 @@
   border-style: solid;
 }
 
+.albumInfoChild {
+  display: inline-flex;
+}
+
+.albumInfo {
+  display: inline-flex;
+
+  padding: 45px;
+}
+
+.musicReviewListContainer{
+  justify-items: auto;
+  display: -moz-inline-grid;
+}
+
+.scoreContainer {
+  display: block;
+
+  border-width: 10px;
+  border-color: white;
+  border-style: solid;
+
+  margin-left: 750px;
+  margin-right: 750px;
+
+  padding-left: 65px; 
+  padding-right: 65px;
+}
+
+.score {
+  text-align: center;
+
+  display: block;
+
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.albumCoverGrid {
+  width: var(--musicAlbumCoverSize);
+  height: var(--musicAlbumCoverSize);
+}
+
+.albumCovers {
+  border-width: 5px;
+  border-color: white;
+  border-style: solid;
+
+  width: 150px;
+  height: 150px;
+
+  display: inline-grid;
+}
+
+#tracklistContainer{
+  text-align: right;
+}
+
+#albumCoverReview {
+  margin-top: 35px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 35px;
+
+  display: inline-block;
+
+  width: var(--albumCoverSize); 
+  height: var(--albumCoverSize);
+}
+
+#tracklist {
+  display: inline-block;
+  text-align: left;
+}
+
+#albumTitle{
+  text-align: center;
+}
+
+#title { 
+  text-align: center; 
+  color: white; 
+}
 
 #empConBody {
   text-align: center;
@@ -36,6 +120,12 @@
   border-style: solid;
 }
 
+#score {
+  text-align: center;
+
+  display: block;
+}
+
 #navbar {
   color: white;
   padding-inline: 15px;
@@ -45,6 +135,11 @@ html {
   background-color: black;
   font-family: comicSans;
   color: white;
+  cursor: url("cursor.svg"), auto;
+}
+
+body { 
+  cursor: url("cursor.svg"), auto;
 }
 
 header {
@@ -53,6 +148,7 @@ header {
 
 a {
   color: #a12020;
+  cursor: url("cursor.svg"), auto;
 }
 
 nav {
@@ -64,3 +160,5 @@ nav {
   margin-left: 25px;
   margin-right: 25px;
 }
+
+

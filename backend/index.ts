@@ -37,4 +37,3 @@ const server =  Bun.serve({
 
 console.log(server.port);
 console.log(server.url);
-

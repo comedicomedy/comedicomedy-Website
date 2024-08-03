@@ -1,6 +1,6 @@
 // random quote
 let Quotes = [
-    '"Never finished a project since \'08"', '"Commiting tax fraud since \'98"', '"I just want to Grill"', '"I don\'t play games.... Unless I want to"', '"Comedic is comedy but I\'m bad at spelling"'
+    '"Never finished a project since \'08"', '"Commiting tax fraud since \'98"', '"I just want to Grill"', '"I don\'t play games.... Unless I want to"', '"Comedic is comedy but I\'m bad at spelling"', '"Never Goon"'
 ];
 
 var visits = 0;
@@ -25,9 +25,17 @@ let randomQuote = selectRandomQuote();
 var numOfVisitors = 0;
 
 window.onload = function(){
-    document.getElementById("ranQuote").innerHTML = randomQuote;
-    document.getElementById("numOfVisits").innerHTML = "Number of Employees: " + numOfVisitors;
+  document.getElementById("ranQuote").innerHTML = randomQuote;
+  document.getElementById("numOfVisits").innerHTML = "Number of Employees: " + numOfVisitors;
+
+  if (window.visualViewport.width < 800){
+    document.getElementById("albumTitle").innerHTML = "Rotate Phone Horizontaly and Refresh";
+  }
+
 }
+
+
+// Call Backend for Number of Visitors
 
 const jsonUrl =
   "http://localhost:8080/visits";
@@ -44,3 +52,4 @@ let jsonFile = fetch(jsonUrl).then((response) => {
   console.log(response.numOfVisits);
 })
 
+  
