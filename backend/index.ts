@@ -8,6 +8,7 @@ var  numOfVisits = await fs.readFile("visits").then((res) => {
 
 const server =  Bun.serve({
     port: 8080,
+    
     fetch(req) {
                 
         if (new URL(req.url).pathname  === "/visits"){
