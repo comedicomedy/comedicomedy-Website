@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
     
     albums.tpab_klamar.addEventListener("mouseenter", () => {
        albums.tpab_klamar.innerHTML = 
-       '<a href="musicReviews/tpab.html" ><img src="assets/albumCovers/TPAB.png" id="tpab-klamar" class="albumCoverGrid"></a>';
+       '<a href="musicReviews/tpab.html" ><img src="assets/albumCovers/TPAB.png" alt="To Pimp a Butterfly" id="tpab-klamar" class="albumCoverGrid"></a>';
            
     });
     albums.tpab_klamar.addEventListener("mouseout", () => {
