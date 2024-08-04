@@ -8,11 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
         isLoaded = true;                
     });
 
-    if (isLoaded === true) {
-        albums.tpab_klamar.innerHTML = 
-        '<a href="musicReviews/tpab.html" ><img src="assets/albumCovers/TPAB.png" alt="To Pimp a Butterfly" id="tpab-klamar" class="albumCoverGrid"></a>';
-    }
     
+
     albums.tpab_klamar.addEventListener("mouseout", () => {
         isLoaded = false;
 
@@ -21,3 +18,8 @@ window.addEventListener("DOMContentLoaded", () => {
     });
     
 })
+
+if (isLoaded == true) {
+    albums.tpab_klamar.innerHTML = 
+    '<a href="musicReviews/tpab.html" ><img src="assets/albumCovers/TPAB.png" alt="To Pimp a Butterfly" id="tpab-klamar" class="albumCoverGrid"></a>';
+}
