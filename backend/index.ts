@@ -29,6 +29,12 @@ const server =  Bun.serve({
         
     
       return Response.error();
+    },
+
+    tls: {
+        key: Bun.file("certs/key.pem"),
+        cert: Bun.file("certs/cert.pem"),
+        serverName: "comedicomedy.com",
     }
 
 })
