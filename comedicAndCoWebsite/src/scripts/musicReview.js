@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
     albums.tpab_klamar.addEventListener("mouseout", () => {
         albums.tpab_klamar.innerHTML =  
-        '<a href="musicReviews/tpab.html" ><img src="assets/albumCovers/kLamar-TPAB.png" alt="To Pimp a Butterfly" class="albumCoverGrid" "id="tpab-klamar"></a>'
+        '<img src="assets/albumCovers/kLamar-TPAB.png" alt="To Pimp a Butterfly" class="albumCoverGrid" "id="tpab-klamar">'
     });
     
 })
