@@ -40,7 +40,7 @@ window.onload = function(){
 const jsonUrl =
   "https://18.207.112.201:8080/visits";
 
-let jsonFile = fetch(jsonUrl, {credentials: "include"}).then((response) => {
+let jsonFile = fetch(jsonUrl, {credentials: "omit"}).then((response) => {
   if (!response.ok){
     throw new Error("Https Request Status: " + response.status) 
   }
