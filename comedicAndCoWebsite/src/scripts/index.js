@@ -38,7 +38,7 @@ window.onload = function(){
 // Call Backend for Number of Visitors
 
 const jsonUrl =
-  "https://api.comedicomedy.com:8080/visits";
+  "http://localhost:8080/visits";
 
 let jsonFile = fetch(jsonUrl, {credentials: "omit"}).then((response) => {
   if (!response.ok){
