@@ -1,3 +1,6 @@
+import { Amplify } from "aws-amplify"
+
+
 // random quote
 let Quotes = [
     '"Never finished a project since \'08"', '"Commiting tax fraud since \'98"', '"I just want to Grill"', '"I don\'t play games.... Unless I want to"', '"Comedic is comedy but I\'m bad at spelling"', '"Never Goon"'
