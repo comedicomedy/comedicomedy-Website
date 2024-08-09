@@ -20,7 +20,6 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "aws-amplify": "^6.5.0",
     "bun": "^1.1.22",
     "vite": "^5.4.0"
   }

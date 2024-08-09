@@ -1,5 +1,3 @@
-import { Amplify } from "aws-amplify"
-
 
 // random quote
 let Quotes = [
