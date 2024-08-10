@@ -41,7 +41,7 @@ window.onload = function(){
 const jsonUrl =
   "https://api.comedicomedy.com/visits";
 
-let jsonFile = fetch(jsonUrl, {credentials: "omit"}).then((response) => {
+let jsonFile = fetch(jsonUrl).then((response) => {
   if (!response.ok){
     throw new Error("Https Request Status: " + response.status) 
   }
