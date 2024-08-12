@@ -28,21 +28,28 @@ let randomQuote = selectRandomQuote();
 const jsonUrl =
   "https://api.comedicomedy.com/visits";
 
-let numOfVisitors = fetch(jsonUrl).then((response) => {
-  if (!response.ok){
-    throw new Error("Https Request Status: " + response.status) 
-  }
+async function getNumOfVisits(){
+  let numOfVisits;
+  await fetch(jsonUrl).then((response) => {
+    if (!response.ok){
+      throw new Error("Https Request Status: " + response.status) 
+    }
 
-  return response.json();
-})
-.then((response) => {
-  console.log("Visitors")
-  return response.numOfVisits;
-})
+    return response.json();
+  })
+  .then((response) => {
+    let resVisits = response.numOfVisits;
 
-window.onload = function () {
+    console.log("Visitors: " + resVisits);
+    numOfVisits = resVisits;
+  })
+
+  return numOfVisits; 
+}
+
+window.onload = async function () {
   document.getElementById("ranQuote").innerHTML = randomQuote;
-  document.getElementById("numOfVisits").innerHTML = "Number of Employees: " + numOfVisitors;
+  document.getElementById("numOfVisits").innerHTML = "Number of Employees: " + await getNumOfVisits();
 
   if (window.visualViewport.width < 800){
     document.getElementById("albumTitle").innerHTML = "Rotate Phone Horizontaly and Refresh";
