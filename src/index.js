@@ -23,14 +23,12 @@ function selectRandomQuote() {
 
 let randomQuote = selectRandomQuote();
 
-var numOfVisitors = 0;
-
 // Call Backend for Number of Visitors
 
 const jsonUrl =
   "https://api.comedicomedy.com/visits";
 
-let jsonFile = fetch(jsonUrl).then((response) => {
+let numOfVisitors = fetch(jsonUrl).then((response) => {
   if (!response.ok){
     throw new Error("Https Request Status: " + response.status) 
   }
@@ -38,21 +36,20 @@ let jsonFile = fetch(jsonUrl).then((response) => {
   return response.json();
 })
 .then((response) => {
-  console.log(JSON.stringify(response));
-  numOfVisitors = response.numOfVisits;
-  console.log(response.numOfVisits);
+  console.log("Visitors")
+  return response.numOfVisits;
 })
 
-
-window.onload = function(){
+window.onload = function () {
   document.getElementById("ranQuote").innerHTML = randomQuote;
   document.getElementById("numOfVisits").innerHTML = "Number of Employees: " + numOfVisitors;
 
   if (window.visualViewport.width < 800){
     document.getElementById("albumTitle").innerHTML = "Rotate Phone Horizontaly and Refresh";
   }
-
 }
+
+
 
 
   
