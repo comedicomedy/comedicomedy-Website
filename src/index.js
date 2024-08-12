@@ -25,17 +25,6 @@ let randomQuote = selectRandomQuote();
 
 var numOfVisitors = 0;
 
-window.onload = function(){
-  document.getElementById("ranQuote").innerHTML = randomQuote;
-  document.getElementById("numOfVisits").innerHTML = "Number of Employees: " + numOfVisitors;
-
-  if (window.visualViewport.width < 800){
-    document.getElementById("albumTitle").innerHTML = "Rotate Phone Horizontaly and Refresh";
-  }
-
-}
-
-
 // Call Backend for Number of Visitors
 
 const jsonUrl =
@@ -53,5 +42,17 @@ let jsonFile = fetch(jsonUrl).then((response) => {
   numOfVisitors = response.numOfVisits;
   console.log(response.numOfVisits);
 })
+
+
+window.onload = function(){
+  document.getElementById("ranQuote").innerHTML = randomQuote;
+  document.getElementById("numOfVisits").innerHTML = "Number of Employees: " + numOfVisitors;
+
+  if (window.visualViewport.width < 800){
+    document.getElementById("albumTitle").innerHTML = "Rotate Phone Horizontaly and Refresh";
+  }
+
+}
+
 
   
