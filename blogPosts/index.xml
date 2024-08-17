@@ -48,7 +48,7 @@
                 you hover over an album cover it shows the name of
                 the album, the name of the artist, and the arbitrary score I gave.
             </p>
-            <img src="../assets/webMusicPage.GIF">
+            <img src="../assets/webMusicPage.GIF" style="width: 320px; height: 180;">
             <p id="blog">
                 Another neat thing that is under the visitor counter is a quote that is randomly selected from a
                 collection of quotes that I think are funny.
@@ -74,7 +74,8 @@
             </p>
 
             <h4 id="header">hosting it</h4>
-            <img src="../assets/RaspberryPi.jpg" alt="picture of raspberry pi in my house">
+            <img src="../assets/RaspberryPi.jpg" alt="picture of raspberry pi in my house"
+                style="width: 403px; height: 302px;">
             <p class="blog">
                 As said in the introduction I am currently using Cloudflare tunnels and a Raspberry Pi to self-host the
                 site with Ngnix as a reverse proxy. I was originally going to go serverless using <a
