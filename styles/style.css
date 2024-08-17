@@ -3,12 +3,12 @@
   --musicAlbumCoverSize: 150px;
 }
 
-@font-face { 
-  font-family: comicSans; 
+@font-face {
+  font-family: comicSans;
 
-  src: url(fonts/comic.ttf); 
-}   
-  
+  src: url(fonts/comic.ttf);
+}
+
 .body {
   text-align: left;
   padding: 10px;
@@ -36,7 +36,7 @@
   padding: 45px;
 }
 
-.musicReviewListContainer{
+.musicReviewListContainer {
   justify-items: auto;
   display: -moz-inline-grid;
 }
@@ -51,7 +51,7 @@
   margin-left: 750px;
   margin-right: 750px;
 
-  padding-left: 65px; 
+  padding-left: 65px;
   padding-right: 65px;
 }
 
@@ -80,7 +80,7 @@
   display: inline-grid;
 }
 
-#tracklistContainer{
+#tracklistContainer {
   text-align: right;
 }
 
@@ -92,7 +92,7 @@
 
   display: inline-block;
 
-  width: var(--albumCoverSize); 
+  width: var(--albumCoverSize);
   height: var(--albumCoverSize);
 }
 
@@ -106,13 +106,13 @@
   color: white;
 }
 
-#albumTitle{
+#albumTitle {
   text-align: center;
 }
 
-#title { 
-  text-align: center; 
-  color: white; 
+#title {
+  text-align: center;
+  color: white;
 }
 
 #empConBody {
@@ -147,7 +147,7 @@ html {
   cursor: url("cursor.svg"), auto;
 }
 
-body { 
+body {
   cursor: url("cursor.svg"), auto;
 }
 
@@ -170,4 +170,8 @@ nav {
   margin-right: 25px;
 }
 
-
+img {
+  width: 25%;
+  height: 25%;
+  padding: 10px;
+}
