@@ -1,9 +1,17 @@
 #tpab-klamar-text {
-   display: grid; 
+  display: grid;
 }
 
 #tpab-klamar {
-    border-color: black;
-    display: grid; 
-    
+  border-color: black;
+  display: grid;
+}
+
+#tpab-klamar-text {
+  display: grid;
+}
+
+#tpab-klamar {
+  border-color: black;
+  display: grid;
 }
