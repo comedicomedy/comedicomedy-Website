@@ -82,6 +82,10 @@
 
 #tracklistContainer {
   text-align: right;
+  margin-left: 45 px;
+  margin-right: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 #albumCoverReview {
@@ -100,7 +104,6 @@
   display: inline-block;
   text-align: left;
 }
-
 
 #rss {
   color: white;
